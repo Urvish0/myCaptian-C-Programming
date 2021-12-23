@@ -1,0 +1,35 @@
+#include <stdio.h>
+
+int main() {
+    
+    printf("What do you want to eat: \n1. Pizza\n2. Burger\n3. Pasta\n4. French Fries\n5. Sandwich\n: ");
+    int choice = 0;
+    scanf("%d",&choice);
+    
+    switch(choice){
+        case 1:{
+            printf(" You Ordered Pizza, Please pay Rs239.");
+            break;
+        }
+        case 2:{
+            printf(" You Ordered Burger, Please pay Rs129.");
+            break;
+        } 
+        case 3:{
+            printf(" You Ordered Pasta, Please pay Rs179.");
+            break;
+        } 
+        case 4:{
+            printf(" You Ordered French Fries, Please pay Rs99.");
+            break;
+        } 
+        case 5:{
+            printf(" You Ordered Sandwich, Please pay Rs149.");
+            break;
+        }
+        default:{
+            printf("You have entered a wrong value.");
+        }
+    }
+    return 0;
+}
